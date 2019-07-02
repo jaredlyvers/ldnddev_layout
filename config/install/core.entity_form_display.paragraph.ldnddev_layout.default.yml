@@ -1,0 +1,95 @@
+uuid: a8af41e5-0b64-44fe-b804-f5f74225a785
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_cnt_eg
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_css
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_edge
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_grid
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_image
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_item
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_overlay
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.ldnddev_layout
+  module:
+    - image
+    - paragraphs
+id: paragraph.ldnddev_layout.default
+targetEntityType: paragraph
+bundle: ldnddev_layout
+mode: default
+content:
+  field_ldnddev_layout_cnt_eg:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_ldnddev_layout_css:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_ldnddev_layout_edge:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_ldnddev_layout_grid:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ldnddev_layout_image:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_ldnddev_layout_item:
+    type: paragraphs
+    weight: 2
+    settings:
+      title: Item
+      title_plural: Items
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    region: content
+  field_ldnddev_layout_overlay:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_ldnddev_layout_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

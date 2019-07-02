@@ -1,0 +1,7 @@
+ldnddev_layout:
+  css:
+    component:
+      assets/css/ldnddev_layout.css:
+        minified: false
+  dependencies:
+    - core/drupal

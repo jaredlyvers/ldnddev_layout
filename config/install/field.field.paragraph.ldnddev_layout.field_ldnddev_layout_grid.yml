@@ -1,0 +1,23 @@
+uuid: 660eeba6-1bf8-44be-b9ac-d8bdc0af8e33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ldnddev_layout_grid
+    - paragraphs.paragraphs_type.ldnddev_layout
+  module:
+    - options
+id: paragraph.ldnddev_layout.field_ldnddev_layout_grid
+field_name: field_ldnddev_layout_grid
+entity_type: paragraph
+bundle: ldnddev_layout
+label: 'Layout Grid Layout'
+description: 'The grid options allow you to choose how many items will be in each section.'
+required: false
+translatable: false
+default_value:
+  -
+    value: '-one -c12'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

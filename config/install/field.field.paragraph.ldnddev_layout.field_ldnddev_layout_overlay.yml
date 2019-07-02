@@ -1,0 +1,21 @@
+uuid: 9937d10a-3dd5-422c-bfd1-97ee4b97bdc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ldnddev_layout_overlay
+    - paragraphs.paragraphs_type.ldnddev_layout
+  module:
+    - options
+id: paragraph.ldnddev_layout.field_ldnddev_layout_overlay
+field_name: field_ldnddev_layout_overlay
+entity_type: paragraph
+bundle: ldnddev_layout
+label: 'Layout Overlay'
+description: 'Use this option to select an overlay and it''s shade strength.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

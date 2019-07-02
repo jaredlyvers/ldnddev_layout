@@ -1,0 +1,19 @@
+uuid: 80a346ed-0fed-497f-ad99-eb9e387e1b68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ldnddev_layout_title
+    - paragraphs.paragraphs_type.ldnddev_layout
+id: paragraph.ldnddev_layout.field_ldnddev_layout_title
+field_name: field_ldnddev_layout_title
+entity_type: paragraph
+bundle: ldnddev_layout
+label: 'Layout Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

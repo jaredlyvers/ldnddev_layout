@@ -1,0 +1,19 @@
+uuid: ad734373-eb21-4f15-ab9e-ad3004e55e25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ldnddev_layout_css
+    - paragraphs.paragraphs_type.ldnddev_layout
+id: paragraph.ldnddev_layout.field_ldnddev_layout_css
+field_name: field_ldnddev_layout_css
+entity_type: paragraph
+bundle: ldnddev_layout
+label: 'Custom CSS Class'
+description: 'Add your own custom CSS class.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,92 @@
+uuid: 1c82da93-f066-478e-9a15-28cadad4bdfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_cnt_eg
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_css
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_edge
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_grid
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_image
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_item
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_overlay
+    - field.field.paragraph.ldnddev_layout.field_ldnddev_layout_title
+    - paragraphs.paragraphs_type.ldnddev_layout
+  module:
+    - entity_reference_revisions
+    - image
+    - options
+id: paragraph.ldnddev_layout.default
+targetEntityType: paragraph
+bundle: ldnddev_layout
+mode: default
+content:
+  field_ldnddev_layout_cnt_eg:
+    weight: 3
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_ldnddev_layout_css:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ldnddev_layout_edge:
+    weight: 1
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_ldnddev_layout_grid:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_ldnddev_layout_image:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_ldnddev_layout_item:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_ldnddev_layout_overlay:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_ldnddev_layout_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

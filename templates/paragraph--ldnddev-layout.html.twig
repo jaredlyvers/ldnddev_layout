@@ -1,0 +1,46 @@
+{{ attach_library('ldnddev_layout/ldnddev_layout') }}
+{% 
+    set classes=[
+        'ldnddev-layout'
+    ]
+%}
+
+{% if content.field_ldnddev_layout_css.0 %}
+    {% set classes = classes|merge([content.field_ldnddev_layout_css.0|render|clean_class]) %}
+{% endif %}
+
+{% if content.field_ldnddev_layout_edge|render|trim == 'On' %}
+    {% set classes = classes|merge(['-full']) %}
+    {% else %}
+        {% set classes = classes|merge(['-contained']) %}
+{% endif %}
+
+{% if content.field_ldnddev_layout_cnt_eg|render|trim == 'On' %}
+    {% set content_edge = '-full' %}
+    {% else %}
+        {% set content_edge = '-contained' %}
+{% endif %}
+
+{% if content.field_ldnddev_layout_grid.0 %}
+    {% set grid = content.field_ldnddev_layout_grid.0|render %}
+{% endif %}
+
+{% if content.field_ldnddev_layout_image.0 %}
+    {% set img_url = file_url(content.field_ldnddev_layout_image['#items'].entity.uri.value) %}
+{% endif %}
+
+{% if content.field_ldnddev_layout_overlay.0 %}
+    {% set classes = classes|merge([content.field_ldnddev_layout_overlay.0|render]) %}
+{% endif %}
+
+<div {{ attributes.addClass(classes) }} style="background-image: url({{ img_url }});">
+    <div class="ldnddev-layout__content {{ content_edge }}">
+        <h2 class="ldnddev-layout__title">{{ content.field_ldnddev_layout_title|render }}</h2>
+        <div class="ldnddev-layout__items {{ grid }}">
+            {{ content.field_ldnddev_layout_item }}
+        </div>
+    </div>
+    {% if content.field_ldnddev_layout_overlay.0  %}
+        <div class="ldnddev-layout__overlay"></div>
+    {% endif %}
+</div>

@@ -1,0 +1,9 @@
+uuid: de089246-90b8-491d-9b79-8ad58205105b
+langcode: en
+status: true
+dependencies: {  }
+id: ldnddev_layout
+label: 'ldnddev Layout'
+icon_uuid: null
+description: 'This bundle is used to combine all bundles together into a section wrapper. This bundle allows you to add multiple sections to a page, each with their own layout of components.'
+behavior_plugins: {  }

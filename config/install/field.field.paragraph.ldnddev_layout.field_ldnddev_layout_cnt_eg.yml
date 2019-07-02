@@ -1,0 +1,23 @@
+uuid: 1a8e2453-91c2-4a69-9adb-6df80b9260a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ldnddev_layout_cnt_eg
+    - paragraphs.paragraphs_type.ldnddev_layout
+id: paragraph.ldnddev_layout.field_ldnddev_layout_cnt_eg
+field_name: field_ldnddev_layout_cnt_eg
+entity_type: paragraph
+bundle: ldnddev_layout
+label: 'Content Edge to Edge'
+description: 'Selecting this option will allow the section <em>content</em> to go edge-to-edge of the browser screen.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * ldnddev Layout Module file.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function ldnddev_layout_theme($existing, $type, $theme, $path) {
+  return [
+    'paragraph__ldnddev_layout' => [
+      'base hook' => 'paragraph',
+    ],
+    'field__paragraph__field_ldnddev_layout_item' => [
+      'base hook' => 'paragraph',
+    ],
+  ];
+}
